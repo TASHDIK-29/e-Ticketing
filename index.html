@@ -1,16 +1,108 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Assignment-5</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="/styles/style.css">
 </head>
+
 <body>
     <header>
-
+        <!-- nav -->
+        <div class="navbar bg-base-100 w-4/5 mx-auto my-6">
+            <div class="navbar-start">
+                <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h8m-8 6h16" />
+                        </svg>
+                    </div>
+                    <ul tabindex="0"
+                        class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 ">
+                        <li class="font-bold text-[#030712B3]"><a>Home</a></li>
+                        <li class="font-bold text-[#030712B3]"><a>About</a></li>
+                        <li class="font-bold text-[#030712B3]"><a>Destination</a></li>
+                        <li class="font-bold text-[#030712B3]"><a>Search</a></li>
+                    </ul>
+                </div>
+                <a class="btn btn-ghost text-3xl font-bold">TD Travels</a>
+            </div>
+            <div class="navbar-center hidden lg:flex">
+                <ul class="menu menu-horizontal px-1">
+                    <!-- <li><a>Item 1</a></li>
+                    <li>
+                        <details>
+                            <summary>Parent</summary>
+                            <ul class="p-2">
+                                <li><a>Submenu 1</a></li>
+                                <li><a>Submenu 2</a></li>
+                            </ul>
+                        </details>
+                    </li>
+                    <li><a>Item 3</a></li> -->
+                    <li class="font-bold text-[#030712B3]"><a>Home</a></li>
+                    <li class="font-bold text-[#030712B3]"><a>About</a></li>
+                    <li class="font-bold text-[#030712B3]"><a>Destination</a></li>
+                    <li class="font-bold text-[#030712B3]"><a>Search</a></li>
+                </ul>
+            </div>
+            <div class="navbar-end">
+                <a class="btn border border-green-500 bg-[#1DD1001A] text-green-500 text-base font-medium">Bus <img
+                        src="./images/bus-icon.png" alt=""></a>
+            </div>
+        </div>
+        <!-- Banner -->
+        <div
+            class="w-4/5 mx-auto min-h-[550px] text-center bg-[url('./images/banner.png')] bg-contain bg-no-repeat flex flex-col justify-center items-center space-y-5">
+            <!-- <img src="./images/banner.png" alt=""> -->
+            <h1 class="text-6xl font-extrabold text-white">End-to-End Travel with</h1>
+            <h2 class="text-6xl font-extrabold text-green-500">TD Travels</h2>
+            <p class="text-lg font-normal text-white">Yes, you can run unit tests and view the results directly within
+                the app. The integrated testing features allow for a streamlined .</p>
+            <button class="bg-green-500 text-black p-4 rounded-xl">Buy Tickets</button>
+        </div>
     </header>
     <main>
-        
+        <!-- Coupon Section -->
+        <section class="w-4/5 mx-auto text-center my-8 space-y-9">
+            <h1 class="text-3xl font-bold">Best offers for you</h1>
+            <div class="flex gap-5">
+                <!-- 15% -->
+                <div class="flex justify-between bg-[#FFBF0F] rounded-3xl flex-1">
+                    <div class="flex flex-col justify-center items-center flex-1">
+                        <h1 class="text-3xl font-extrabold inter">15% OFF</h1>
+                        <h3 class="font-medium">on your next purchase</h3>
+                        <p class="text-[#03071280] font-medium">use by January 2024</p>
+                    </div>
+                    <img src="./images/cupon-devider.png" alt="">
+                    <div class="flex flex-col justify-center items-center flex-1">
+                        <h2 class="text-3xl font-extrabold">NEW15</h2>
+                        <p class="text-[#03071280] font-medium">Coupon Code</p>
+                    </div>
+                </div>
+                <!-- 20% -->
+                <div class="flex justify-between bg-[#F78C9C] rounded-3xl flex-1">
+                    <div class="flex flex-col justify-center items-center flex-1">
+                        <h1 class="text-3xl font-extrabold inter">20% OFF</h1>
+                        <h3 class="font-medium">on your next purchase</h3>
+                        <p class="text-[#03071280] font-medium">use by January 2024</p>
+                    </div>
+                    <img src="./images/cupon-devider.png" alt="">
+                    <div class="flex flex-col justify-center items-center flex-1">
+                        <h2 class="text-3xl font-extrabold">Couple 20</h2>
+                        <p class="text-[#03071280] font-medium">Coupon Code</p>
+                    </div>
+                </div>
+            </div>
+            <button class="border border-green-500 rounded-xl text-green-500 font-bold p-4">See All Offers</button>
+        </section>
     </main>
 </body>
+
 </html>
