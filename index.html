@@ -11,7 +11,7 @@
 </head>
 
 <body>
-    <header>
+    <header class="relative mb-20">
         <!-- nav -->
         <div class="navbar bg-base-100 w-4/5 mx-auto my-6">
             <div class="navbar-start">
@@ -31,7 +31,7 @@
                         <li class="font-bold text-[#030712B3]"><a>Search</a></li>
                     </ul>
                 </div>
-                <a class="btn btn-ghost text-3xl font-bold">TD Travels</a>
+                <a class="btn btn-ghost text-3xl font-bold"><span class="text-[#1DD100] font-extrabold">e</span>-Ticketing</a>
             </div>
             <div class="navbar-center hidden lg:flex">
                 <ul class="menu menu-horizontal px-1">
@@ -53,24 +53,50 @@
                 </ul>
             </div>
             <div class="navbar-end">
-                <a class="btn border border-green-500 bg-[#1DD1001A] text-green-500 text-base font-medium">Bus <img
+                <a href="#seat-calculate"
+                    class="btn border border-[#1DD100] bg-[#1DD1001A] text-[#1DD100] text-base font-medium">Bus <img
                         src="./images/bus-icon.png" alt=""></a>
             </div>
         </div>
         <!-- Banner -->
         <div
             class="w-4/5 mx-auto min-h-[550px] text-center bg-[url('./images/banner.png')] bg-contain bg-no-repeat flex flex-col justify-center items-center space-y-5">
-            <!-- <img src="./images/banner.png" alt=""> -->
             <h1 class="text-6xl font-extrabold text-white">End-to-End Travel with</h1>
-            <h2 class="text-6xl font-extrabold text-green-500">TD Travels</h2>
+            <h2 class="text-6xl font-extrabold text-[#1DD100]">TD Travels</h2>
             <p class="text-lg font-normal text-white">Yes, you can run unit tests and view the results directly within
                 the app. The integrated testing features allow for a streamlined .</p>
-            <button class="bg-green-500 text-black p-4 rounded-xl">Buy Tickets</button>
+            <div>
+                <a href="#seat-calculate"><button class="bg-[#1DD100] text-black p-4 rounded-xl">Buy Tickets</button>
+                </a>
+            </div>
+        </div>
+        <div class="flex justify-around w-3/4 mx-auto absolute bottom-0 left-40">
+            <div class="flex justify-around items-center border-b-4 border-b-[#1DD100] rounded-2xl bg-white p-2">
+                <img src="./images/people.png" alt="">
+                <div>
+                    <h1 class="font-bold text-3xl inter">500K+</h1>
+                    <p class="font-bold text-[#03071299]">Registered users</p>
+                </div>
+            </div>
+            <div class="flex justify-around items-center border-b-4 border-b-[#1DD100] rounded-2xl bg-white p-2">
+                <img src="./images/ticket-cupon.png" alt="">
+                <div>
+                    <h1 class="font-bold text-3xl inter">1.7 lacks</h1>
+                    <p class="font-bold text-[#03071299]">Tickets sold</p>
+                </div>
+            </div>
+            <div class="flex justify-around items-center border-b-4 border-b-[#1DD100] rounded-2xl bg-white p-2">
+                <img src="./images/stoppage.png" alt="">
+                <div>
+                    <h1 class="font-bold text-3xl inter">80K+</h1>
+                    <p class="font-bold text-[#03071299]">Rental partners</p>
+                </div>
+            </div>
         </div>
     </header>
     <main>
         <!-- Coupon Section -->
-        <section class="w-4/5 mx-auto text-center my-8 space-y-9">
+        <section class="w-4/5 mx-auto text-center my-32 space-y-9">
             <h1 class="text-3xl font-bold">Best offers for you</h1>
             <div class="flex gap-5">
                 <!-- 15% -->
@@ -100,14 +126,14 @@
                     </div>
                 </div>
             </div>
-            <button class="border border-green-500 rounded-xl text-green-500 font-bold p-4">See All Offers</button>
+            <button class="border border-[#1DD100] rounded-xl text-[#1DD100] font-bold p-4">See All Offers</button>
         </section>
         <!-- Ticket Section -->
-        <section class="mt-20 bg-[#F7F8F8] border-t rounded-t-3xl border-t-green-700 py-10">
+        <section id="seat-calculate" class="mt-20 bg-[#F7F8F8] border-t-4 rounded-t-3xl border-t-[#1DD100] py-10">
             <!-- Upper -->
             <div class="text-center w-4/5 mx-auto">
                 <div class="my-20 space-y-5">
-                    <h1 class="text-black text-3xl font-bold">P.H Paribahan</h1>
+                    <h1 class="text-black text-3xl font-bold">TD Travels</h1>
                     <p class="text-[#03071299] text-lg font-medium">Yes, you can run unit tests and view the results
                         directly within the app. The integrated testingfeatures allow for a streamlined .</p>
                 </div>
@@ -341,7 +367,8 @@
                     <div class="bg-[#0307121A] border-none rounded-xl p-4 space-y-3">
                         <!-- Heading -->
                         <div class="flex justify-between">
-                            <h6 class="font-bold">Seat <span id="selected-seat" class="inter bg-[#1DD100] rounded-lg p-1">0</span></h6>
+                            <h6 class="font-bold">Seat <span id="selected-seat"
+                                    class="inter bg-[#1DD100] rounded-lg p-1">0</span></h6>
                             <h6 class="font-bold">Class</h6>
                             <h6 class="font-bold">Price</h6>
                         </div>
@@ -363,7 +390,8 @@
                                 <input id="coupon-field" class="p-2 border-none rounded-l-xl w-4/5"
                                     placeholder="Have any copupon?" type="text">
                                 <button id="apply-btn" onclick="applyCoupon()"
-                                    class="bg-slate-400 p-2 text-white border-none rounded-r-xl font-bold" disabled>Apply</button>
+                                    class="bg-slate-400 p-2 text-white border-none rounded-r-xl font-bold"
+                                    disabled>Apply</button>
                             </div>
                             <!-- Grant total -->
                             <div class="flex justify-between">
@@ -388,7 +416,9 @@
                     </div>
                     <!-- <button class="bg-[#1DD100] border-none rounded-xl p-2 w-full">Next</button> -->
                     <!-- Open the modal using ID.showModal() method -->
-                    <button disabled id="final-btn" class="bg-[#1DD100] border-none rounded-xl p-2 w-full font-bold text-white" onclick="my_modal_1.showModal()">Confirm</button>
+                    <button disabled id="final-btn"
+                        class="bg-[#1DD100] border-none rounded-xl p-2 w-full font-bold text-white"
+                        onclick="my_modal_1.showModal()">Confirm</button>
                     <dialog id="my_modal_1" class="modal">
                         <div class="modal-box flex flex-col justify-center items-center">
                             <img src="./images/success.png" alt="">
@@ -408,6 +438,31 @@
             </div>
         </section>
     </main>
+    <footer class="bg-black p-16 space-y-5">
+        <div class="flex justify-between">
+            <div class="space-y-4">
+                <h1 class="text-3xl text-[#FFFFFFCC] font-bold"><span class="text-[#1DD100] font-extrabold">e</span>-Ticketing</h1>
+                <p class="text-base text-[#FFFFFFCC] font-bold">e-Ticketing is a digital platform to make <br> your daily commuting better.</p>
+            </div>
+            <div class="w-1/6 text-center">
+                <h1 class="text-base text-[#FFFFFFCC] font-bold">Download our app</h1>
+                <a href=""><img src="./images/gp.png" alt=""></a>
+            </div>
+        </div>
+        <div>
+            <hr class="text-[#FFFFFFCC]">
+        </div>
+        <div class="flex justify-between">
+            <div>
+                <h1 class="text-[#FFFFFFCC] font-bold">@all rights reserved, P-Ticket services limited.2024</h1>
+            </div>
+            <div class="flex gap-8">
+                <h1 class="text-[#FFFFFFCC] font-bold">Terms & condition</h1>
+                <h1 class="text-[#FFFFFFCC] font-bold">Return & refund policy</h1>
+                <h1 class="text-[#FFFFFFCC] font-bold">Privacy policy</h1>
+            </div>
+        </div>
+    </footer>
 
     <script src="/scripts/utility.js"></script>
     <script src="/scripts/ticket.js"></script>
