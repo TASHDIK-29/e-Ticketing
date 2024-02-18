@@ -133,7 +133,7 @@
                             <div>
                                 <button
                                     class="flex gap-2 items-center justify-center border-none h-full rounded-xl bg-[#1DD10015] p-2"><img
-                                        src="./images/seat-green.png" alt=""><span>40</span> Seats left</button>
+                                        src="./images/seat-green.png" alt=""><span id="remaining-seat" class="inter">40</span> Seats left</button>
                             </div>
                         </div>
                         <!-- Left-low -->
@@ -196,132 +196,134 @@
                         <button class="border-none rounded-lg px-7 py-2 bg-[#0307121A] mx-2"><img
                                 src="./images/steering-wheel.png" alt=""></button>
                     </div>
-                    <!-- A -->
-                    <div class="border flex justify-between items-center">
-                        <h5 class="text-[#03071280] font-bold text-xl inter">A</h5>
-                        <div>
-                            <button
-                                class="border-none rounded-lg px-8 py-2 bg-[#0307121A] p-4 text-[#03071280] font-bold text-xl mx-2 inter">A1</button>
-                            <button
-                                class="border-none rounded-lg px-8 py-2 bg-[#0307121A] p-4 text-[#03071280] font-bold text-xl mx-2 inter">A2</button>
+                    <div id="seat-container" class="space-y-6 border">
+                        <!-- A -->
+                        <div class="border flex justify-between items-center">
+                            <h5 class="text-[#03071280] font-bold text-xl inter">A</h5>
+                            <div>
+                                <button
+                                    class="border-none rounded-lg px-8 py-2 bg-[#0307121A] p-4 text-[#03071280] font-bold text-xl mx-2 inter">A1</button>
+                                <button
+                                    class="border-none rounded-lg px-8 py-2 bg-[#0307121A] p-4 text-[#03071280] font-bold text-xl mx-2 inter">A2</button>
+                            </div>
+                            <div>
+                                <button
+                                    class="border-none rounded-lg px-8 py-2 bg-[#0307121A] p-4 text-[#03071280] font-bold text-xl mx-2 inter">A3</button>
+                                <button
+                                    class="border-none rounded-lg px-8 py-2 bg-[#0307121A] p-4 text-[#03071280] font-bold text-xl mx-2 inter">A4</button>
+                            </div>
                         </div>
-                        <div>
-                            <button
-                                class="border-none rounded-lg px-8 py-2 bg-[#0307121A] p-4 text-[#03071280] font-bold text-xl mx-2 inter">A3</button>
-                            <button
-                                class="border-none rounded-lg px-8 py-2 bg-[#0307121A] p-4 text-[#03071280] font-bold text-xl mx-2 inter">A4</button>
+                        <!-- B -->
+                        <div class="border flex justify-between items-center">
+                            <h5 class="text-[#03071280] font-bold text-xl inter">B</h5>
+                            <div>
+                                <button
+                                    class="border-none rounded-lg px-8 py-2 bg-[#0307121A] p-4 text-[#03071280] font-bold text-xl mx-2 inter">B1</button>
+                                <button
+                                    class="border-none rounded-lg px-8 py-2 bg-[#0307121A] p-4 text-[#03071280] font-bold text-xl mx-2 inter">B2</button>
+                            </div>
+                            <div>
+                                <button
+                                    class="border-none rounded-lg px-8 py-2 bg-[#0307121A] p-4 text-[#03071280] font-bold text-xl mx-2 inter">B3</button>
+                                <button
+                                    class="border-none rounded-lg px-8 py-2 bg-[#0307121A] p-4 text-[#03071280] font-bold text-xl mx-2 inter">B4</button>
+                            </div>
                         </div>
-                    </div>
-                    <!-- B -->
-                    <div class="border flex justify-between items-center">
-                        <h5 class="text-[#03071280] font-bold text-xl inter">B</h5>
-                        <div>
-                            <button
-                                class="border-none rounded-lg px-8 py-2 bg-[#0307121A] p-4 text-[#03071280] font-bold text-xl mx-2 inter">B1</button>
-                            <button
-                                class="border-none rounded-lg px-8 py-2 bg-[#0307121A] p-4 text-[#03071280] font-bold text-xl mx-2 inter">B2</button>
+                        <!-- C -->
+                        <div class="border flex justify-between items-center">
+                            <h5 class="text-[#03071280] font-bold text-xl inter">C</h5>
+                            <div>
+                                <button
+                                    class="border-none rounded-lg px-8 py-2 bg-[#0307121A] p-4 text-[#03071280] font-bold text-xl mx-2 inter">C1</button>
+                                <button
+                                    class="border-none rounded-lg px-8 py-2 bg-[#0307121A] p-4 text-[#03071280] font-bold text-xl mx-2 inter">C2</button>
+                            </div>
+                            <div>
+                                <button
+                                    class="border-none rounded-lg px-8 py-2 bg-[#0307121A] p-4 text-[#03071280] font-bold text-xl mx-2 inter">C3</button>
+                                <button
+                                    class="border-none rounded-lg px-8 py-2 bg-[#0307121A] p-4 text-[#03071280] font-bold text-xl mx-2 inter">C4</button>
+                            </div>
                         </div>
-                        <div>
-                            <button
-                                class="border-none rounded-lg px-8 py-2 bg-[#0307121A] p-4 text-[#03071280] font-bold text-xl mx-2 inter">B3</button>
-                            <button
-                                class="border-none rounded-lg px-8 py-2 bg-[#0307121A] p-4 text-[#03071280] font-bold text-xl mx-2 inter">B4</button>
+                        <!-- D -->
+                        <div class="border flex justify-between items-center">
+                            <h5 class="text-[#03071280] font-bold text-xl inter">D</h5>
+                            <div>
+                                <button
+                                    class="border-none rounded-lg px-8 py-2 bg-[#0307121A] p-4 text-[#03071280] font-bold text-xl mx-2 inter">D1</button>
+                                <button
+                                    class="border-none rounded-lg px-8 py-2 bg-[#0307121A] p-4 text-[#03071280] font-bold text-xl mx-2 inter">D2</button>
+                            </div>
+                            <div>
+                                <button
+                                    class="border-none rounded-lg px-8 py-2 bg-[#0307121A] p-4 text-[#03071280] font-bold text-xl mx-2 inter">D3</button>
+                                <button
+                                    class="border-none rounded-lg px-8 py-2 bg-[#0307121A] p-4 text-[#03071280] font-bold text-xl mx-2 inter">D4</button>
+                            </div>
                         </div>
-                    </div>
-                    <!-- C -->
-                    <div class="border flex justify-between items-center">
-                        <h5 class="text-[#03071280] font-bold text-xl inter">C</h5>
-                        <div>
-                            <button
-                                class="border-none rounded-lg px-8 py-2 bg-[#0307121A] p-4 text-[#03071280] font-bold text-xl mx-2 inter">C1</button>
-                            <button
-                                class="border-none rounded-lg px-8 py-2 bg-[#0307121A] p-4 text-[#03071280] font-bold text-xl mx-2 inter">C2</button>
+                        <!-- E-->
+                        <div class="border flex justify-between items-center">
+                            <h5 class="text-[#03071280] font-bold text-xl inter">E</h5>
+                            <div>
+                                <button
+                                    class="border-none rounded-lg px-8 py-2 bg-[#0307121A] p-4 text-[#03071280] font-bold text-xl mx-2 inter">E1</button>
+                                <button
+                                    class="border-none rounded-lg px-8 py-2 bg-[#0307121A] p-4 text-[#03071280] font-bold text-xl mx-2 inter">E2</button>
+                            </div>
+                            <div>
+                                <button
+                                    class="border-none rounded-lg px-8 py-2 bg-[#0307121A] p-4 text-[#03071280] font-bold text-xl mx-2 inter">E3</button>
+                                <button
+                                    class="border-none rounded-lg px-8 py-2 bg-[#0307121A] p-4 text-[#03071280] font-bold text-xl mx-2 inter">E4</button>
+                            </div>
                         </div>
-                        <div>
-                            <button
-                                class="border-none rounded-lg px-8 py-2 bg-[#0307121A] p-4 text-[#03071280] font-bold text-xl mx-2 inter">C3</button>
-                            <button
-                                class="border-none rounded-lg px-8 py-2 bg-[#0307121A] p-4 text-[#03071280] font-bold text-xl mx-2 inter">C4</button>
+                        <!-- F -->
+                        <div class="border flex justify-between items-center">
+                            <h5 class="text-[#03071280] font-bold text-xl inter">F</h5>
+                            <div>
+                                <button
+                                    class="border-none rounded-lg px-8 py-2 bg-[#0307121A] p-4 text-[#03071280] font-bold text-xl mx-2 inter">F1</button>
+                                <button
+                                    class="border-none rounded-lg px-8 py-2 bg-[#0307121A] p-4 text-[#03071280] font-bold text-xl mx-2 inter">F2</button>
+                            </div>
+                            <div>
+                                <button
+                                    class="border-none rounded-lg px-8 py-2 bg-[#0307121A] p-4 text-[#03071280] font-bold text-xl mx-2 inter">F3</button>
+                                <button
+                                    class="border-none rounded-lg px-8 py-2 bg-[#0307121A] p-4 text-[#03071280] font-bold text-xl mx-2 inter">F4</button>
+                            </div>
                         </div>
-                    </div>
-                    <!-- D -->
-                    <div class="border flex justify-between items-center">
-                        <h5 class="text-[#03071280] font-bold text-xl inter">D</h5>
-                        <div>
-                            <button
-                                class="border-none rounded-lg px-8 py-2 bg-[#0307121A] p-4 text-[#03071280] font-bold text-xl mx-2 inter">D1</button>
-                            <button
-                                class="border-none rounded-lg px-8 py-2 bg-[#0307121A] p-4 text-[#03071280] font-bold text-xl mx-2 inter">D2</button>
+                        <!-- G -->
+                        <div class="border flex justify-between items-center">
+                            <h5 class="text-[#03071280] font-bold text-xl inter">G</h5>
+                            <div>
+                                <button
+                                    class="border-none rounded-lg px-8 py-2 bg-[#0307121A] p-4 text-[#03071280] font-bold text-xl mx-2 inter">G1</button>
+                                <button
+                                    class="border-none rounded-lg px-8 py-2 bg-[#0307121A] p-4 text-[#03071280] font-bold text-xl mx-2 inter">G2</button>
+                            </div>
+                            <div>
+                                <button
+                                    class="border-none rounded-lg px-8 py-2 bg-[#0307121A] p-4 text-[#03071280] font-bold text-xl mx-2 inter">G3</button>
+                                <button
+                                    class="border-none rounded-lg px-8 py-2 bg-[#0307121A] p-4 text-[#03071280] font-bold text-xl mx-2 inter">G4</button>
+                            </div>
                         </div>
-                        <div>
-                            <button
-                                class="border-none rounded-lg px-8 py-2 bg-[#0307121A] p-4 text-[#03071280] font-bold text-xl mx-2 inter">D3</button>
-                            <button
-                                class="border-none rounded-lg px-8 py-2 bg-[#0307121A] p-4 text-[#03071280] font-bold text-xl mx-2 inter">D4</button>
-                        </div>
-                    </div>
-                    <!-- E-->
-                    <div class="border flex justify-between items-center">
-                        <h5 class="text-[#03071280] font-bold text-xl inter">E</h5>
-                        <div>
-                            <button
-                                class="border-none rounded-lg px-8 py-2 bg-[#0307121A] p-4 text-[#03071280] font-bold text-xl mx-2 inter">E1</button>
-                            <button
-                                class="border-none rounded-lg px-8 py-2 bg-[#0307121A] p-4 text-[#03071280] font-bold text-xl mx-2 inter">E2</button>
-                        </div>
-                        <div>
-                            <button
-                                class="border-none rounded-lg px-8 py-2 bg-[#0307121A] p-4 text-[#03071280] font-bold text-xl mx-2 inter">E3</button>
-                            <button
-                                class="border-none rounded-lg px-8 py-2 bg-[#0307121A] p-4 text-[#03071280] font-bold text-xl mx-2 inter">E4</button>
-                        </div>
-                    </div>
-                    <!-- F -->
-                    <div class="border flex justify-between items-center">
-                        <h5 class="text-[#03071280] font-bold text-xl inter">F</h5>
-                        <div>
-                            <button
-                                class="border-none rounded-lg px-8 py-2 bg-[#0307121A] p-4 text-[#03071280] font-bold text-xl mx-2 inter">F1</button>
-                            <button
-                                class="border-none rounded-lg px-8 py-2 bg-[#0307121A] p-4 text-[#03071280] font-bold text-xl mx-2 inter">F2</button>
-                        </div>
-                        <div>
-                            <button
-                                class="border-none rounded-lg px-8 py-2 bg-[#0307121A] p-4 text-[#03071280] font-bold text-xl mx-2 inter">F3</button>
-                            <button
-                                class="border-none rounded-lg px-8 py-2 bg-[#0307121A] p-4 text-[#03071280] font-bold text-xl mx-2 inter">F4</button>
-                        </div>
-                    </div>
-                    <!-- G -->
-                    <div class="border flex justify-between items-center">
-                        <h5 class="text-[#03071280] font-bold text-xl inter">G</h5>
-                        <div>
-                            <button
-                                class="border-none rounded-lg px-8 py-2 bg-[#0307121A] p-4 text-[#03071280] font-bold text-xl mx-2 inter">G1</button>
-                            <button
-                                class="border-none rounded-lg px-8 py-2 bg-[#0307121A] p-4 text-[#03071280] font-bold text-xl mx-2 inter">G2</button>
-                        </div>
-                        <div>
-                            <button
-                                class="border-none rounded-lg px-8 py-2 bg-[#0307121A] p-4 text-[#03071280] font-bold text-xl mx-2 inter">G3</button>
-                            <button
-                                class="border-none rounded-lg px-8 py-2 bg-[#0307121A] p-4 text-[#03071280] font-bold text-xl mx-2 inter">G4</button>
-                        </div>
-                    </div>
-                    <!-- H -->
-                    <div class="border flex justify-between items-center">
-                        <h5 class="text-[#03071280] font-bold text-xl inter">H</h5>
-                        <div>
-                            <button
-                                class="border-none rounded-lg px-8 py-2 bg-[#0307121A] p-4 text-[#03071280] font-bold text-xl mx-2 inter">H1</button>
-                            <button
-                                class="border-none rounded-lg px-8 py-2 bg-[#0307121A] p-4 text-[#03071280] font-bold text-xl mx-2 inter">H2</button>
-                        </div>
-                        <div>
-                            <button
-                                class="border-none rounded-lg px-8 py-2 bg-[#0307121A] p-4 text-[#03071280] font-bold text-xl mx-2 inter">H3</button>
-                            <button
-                                class="border-none rounded-lg px-8 py-2 bg-[#0307121A] p-4 text-[#03071280] font-bold text-xl mx-2 inter">H4</button>
+                        <!-- H -->
+                        <div class="border flex justify-between items-center">
+                            <h5 class="text-[#03071280] font-bold text-xl inter">H</h5>
+                            <div>
+                                <button
+                                    class="border-none rounded-lg px-8 py-2 bg-[#0307121A] p-4 text-[#03071280] font-bold text-xl mx-2 inter">H1</button>
+                                <button
+                                    class="border-none rounded-lg px-8 py-2 bg-[#0307121A] p-4 text-[#03071280] font-bold text-xl mx-2 inter">H2</button>
+                            </div>
+                            <div>
+                                <button
+                                    class="border-none rounded-lg px-8 py-2 bg-[#0307121A] p-4 text-[#03071280] font-bold text-xl mx-2 inter">H3</button>
+                                <button
+                                    class="border-none rounded-lg px-8 py-2 bg-[#0307121A] p-4 text-[#03071280] font-bold text-xl mx-2 inter">H4</button>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -337,7 +339,7 @@
                     <div class="bg-[#0307121A] border-none rounded-xl p-4 space-y-3">
                         <!-- Heading -->
                         <div class="flex justify-between">
-                            <h6>Seat <span>0</span></h6>
+                            <h6>Seat <span id="selected-seat" class="inter">0</span></h6>
                             <h6>Class</h6>
                             <h6>Price</h6>
                         </div>
@@ -372,17 +374,22 @@
                     </div>
                     <div>
                         <h1>Phone Number*</h1>
-                        <input class="p-2 border rounded-xl w-full" placeholder="Enter your phone number" type="number" name="" id="">
+                        <input class="p-2 border rounded-xl w-full" placeholder="Enter your phone number" type="number"
+                            name="" id="">
                     </div>
                     <div>
                         <h1>Email ID</h1>
-                        <input class="p-2 border rounded-xl w-full" placeholder="Enter your email id" type="email" name="" id="">
+                        <input class="p-2 border rounded-xl w-full" placeholder="Enter your email id" type="email"
+                            name="" id="">
                     </div>
                     <button class="bg-[#1DD100] border-none rounded-xl p-2 w-full">Next</button>
                 </div>
             </div>
         </section>
     </main>
+
+    <script src="/scripts/utility.js"></script>
+    <script src="/scripts/ticket.js"></script>
 </body>
 
 </html>
