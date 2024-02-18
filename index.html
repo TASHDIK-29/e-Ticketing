@@ -13,7 +13,7 @@
 <body>
     <header class="relative mb-20">
         <!-- nav -->
-        <div class="navbar bg-base-100 w-4/5 mx-auto my-6">
+        <div class="navbar bg-base-100 lg:w-4/5 mx-auto my-6">
             <div class="navbar-start">
                 <div class="dropdown">
                     <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
@@ -60,16 +60,16 @@
         </div>
         <!-- Banner -->
         <div
-            class="w-4/5 mx-auto min-h-[550px] text-center bg-[url('./images/banner.png')] bg-contain bg-no-repeat flex flex-col justify-center items-center space-y-5">
-            <h1 class="text-6xl font-extrabold text-white">End-to-End Travel with</h1>
-            <h2 class="text-6xl font-extrabold text-[#1DD100]">TD Travels</h2>
-            <p class="text-lg text-white font-semibold">Discover limitless adventures with our company. Your journey begins here. Explore today.</p>
+            class="p-2 lg:p-0 w-4/5 mx-auto min-h-full lg:min-h-[550px] text-center bg-[url('./images/banner.png')] bg-contain lg:bg-contain bg-no-repeat flex flex-col justify-center items-center space-y-1 lg:space-y-5">
+            <h1 class="text-3xl lg:text-6xl font-extrabold text-white">End-to-End Travel with</h1>
+            <h2 class="text-3xl lg:text-6xl font-extrabold text-[#1DD100]">TD Travels</h2>
+            <p class="text-base lg:text-lg text-white font-semibold">Discover limitless adventures with our company. Your journey begins here. Explore today.</p>
             <div>
-                <a href="#seat-calculate"><button class="bg-[#1DD100] text-black p-4 rounded-xl">Buy Tickets</button>
+                <a href="#seat-calculate"><button class="bg-[#1DD100] text-black p-2 lg:p-4 rounded-xl">Buy Tickets</button>
                 </a>
             </div>
         </div>
-        <div class="flex justify-around w-3/4 mx-auto absolute bottom-0 left-40">
+        <div class="lg:flex justify-around w-3/4 mx-auto lg:absolute bottom-0 left-40">
             <div class="flex justify-around items-center border-b-4 border-b-[#1DD100] rounded-2xl bg-white p-2">
                 <img src="./images/people.png" alt="">
                 <div>
@@ -97,9 +97,9 @@
         <!-- Coupon Section -->
         <section class="w-4/5 mx-auto text-center my-32 space-y-9">
             <h1 class="text-3xl font-bold">Best offers for you</h1>
-            <div class="flex gap-5">
+            <div class="lg:flex gap-5 space-y-2">
                 <!-- 15% -->
-                <div class="flex justify-between bg-[#FFBF0F] rounded-3xl flex-1">
+                <div class="flex justify-between bg-[#FFBF0F] rounded-3xl flex-1 px-2">
                     <div class="flex flex-col justify-center items-center flex-1">
                         <h1 class="text-3xl font-extrabold inter">15% OFF</h1>
                         <h3 class="font-medium">on your next purchase</h3>
@@ -112,7 +112,7 @@
                     </div>
                 </div>
                 <!-- 20% -->
-                <div class="flex justify-between bg-[#F78C9C] rounded-3xl flex-1">
+                <div class="flex justify-between bg-[#F78C9C] rounded-3xl flex-1 px-2">
                     <div class="flex flex-col justify-center items-center flex-1">
                         <h1 class="text-3xl font-extrabold inter">20% OFF</h1>
                         <h3 class="font-medium">on your next purchase</h3>
@@ -132,13 +132,13 @@
             <!-- Upper -->
             <div class="text-center w-4/5 mx-auto">
                 <div class="my-20 space-y-5">
-                    <h1 class="text-black text-3xl font-bold">TD Travels</h1>
+                    <h1 class="text-black text-5xl font-bold">TD Travels</h1>
                     <p class="text-[#03071299] text-lg font-semibold">Discover limitless adventures with our travel company. Your journey begins here. Explore today</p>
                 </div>
                 <!-- Paribahan Div -->
-                <div class="flex bg-white rounded-3xl ">
+                <div class="lg:flex bg-white rounded-3xl ">
                     <!-- Left -->
-                    <div class="w-3/4 p-6 space-y-10">
+                    <div class="lg:w-3/4 p-6 space-y-10">
                         <!-- Left-up -->
                         <div class="flex justify-between">
                             <!-- Logo -->
@@ -173,12 +173,12 @@
                                 <h3 class="text-black text-lg font-semibold">9:00 PM</h3>
                             </div>
                             <hr>
-                            <div class="flex justify-evenly">
+                            <div class="lg:flex justify-evenly">
                                 <button
-                                    class="text-[#03071299] font-semibold text-lg border-none rounded-lg bg-[#0307120D] p-3">Boarding
+                                    class="text-[#03071299] font-semibold text-lg border-none rounded-lg bg-[#0307120D] p-3 mb-2">Boarding
                                     Point - Laxmipur</button>
                                 <button
-                                    class="text-[#03071299] font-semibold text-lg border-none rounded-lg bg-[#0307120D] p-3">Dropping
+                                    class="text-[#03071299] font-semibold text-lg border-none rounded-lg bg-[#0307120D] p-3 mb-2">Dropping
                                     Point - Bogura</button>
                                 <button
                                     class="text-[#03071299] font-semibold text-lg border-none rounded-lg bg-[#0307120D] p-3">Est.
@@ -187,9 +187,11 @@
                         </div>
                     </div>
                     <!-- Partition Dots-->
-                    <img class="h-full" src="./images/info-devider.png" alt="">
+                    <!-- <div>
+                        <img class="h-full" src="./images/info-devider.png" alt="">
+                    </div> -->
                     <!-- Right -->
-                    <div class="flex flex-col justify-center place-items-center text-center w-1/4">
+                    <div class="flex flex-col justify-center place-items-center text-center lg:w-1/4">
                         <img src="./images/fare.png" alt="">
                         <h1 class="text-3xl font-bold">550 Taka</h1>
                         <p class="text-[#03071299] text-lg font-bold">Per Seat</p>
@@ -197,9 +199,9 @@
                 </div>
             </div>
             <!-- Lower -->
-            <div class="bg-white w-4/5 mx-auto my-10 border-none rounded-3xl flex justify-around p-4">
+            <div class="bg-white w-4/5 mx-auto my-10 border-none rounded-3xl lg:flex justify-around lg:p-4">
                 <!-- Seats -->
-                <div class="space-y-6 w-1/2">
+                <div class="space-y-6 lg:w-1/2">
                     <div class="space-y-3">
                         <h1 class="text-xl font-bold">Select Your Seat</h1>
                         <hr>
@@ -353,12 +355,12 @@
                     </div>
                 </div>
                 <!-- Partition -->
-                <div>
+                <!-- <div>
                     <img src="./images/info-devider.png" alt="">
                     <img src="./images/info-devider.png" alt="">
-                </div>
+                </div> -->
                 <!-- Calculation -->
-                <div class="space-y-5 w-2/5">
+                <div class="space-y-5 lg:w-2/5">
                     <h4 class="text-xl font-bold">Select Your Seat</h4>
                     <hr>
                     <!-- Selected items container -->
@@ -436,23 +438,24 @@
             </div>
         </section>
     </main>
-    <footer class="bg-black p-16 space-y-5">
-        <div class="flex justify-between">
+    <footer class="bg-black p-2 lg:p-16 space-y-5">
+        <div class="lg:flex justify-between text-center">
             <div class="space-y-4">
                 <h1 class="text-3xl text-[#FFFFFFCC] font-bold"><span class="text-[#1DD100] font-extrabold">e</span>-Ticketing</h1>
                 <p class="text-base text-[#FFFFFFCC] font-bold">e-Ticketing is a digital platform to make <br> your daily commuting better.</p>
             </div>
-            <div class="w-1/6 text-center">
+            <div class="w-full lg:w-1/6 text-center flex items-center justify-center lg:flex-col space-y-3">
                 <h1 class="text-base text-[#FFFFFFCC] font-bold">Download our app</h1>
-                <a href=""><img src="./images/gp.png" alt=""></a>
+                <!-- <a href=""><img class="w-28 lg:w-full" src="./images/gp.png" alt=""></a> -->
+                <img class="w-1/4 lg:w-full" src="./images/gp.png" alt="">
             </div>
         </div>
         <div>
             <hr class="text-[#FFFFFFCC]">
         </div>
-        <div class="flex justify-between">
+        <div class="lg:flex justify-between space-y-3 text-center">
             <div>
-                <h1 class="text-[#FFFFFFCC] font-bold">@all rights reserved, P-Ticket services limited.2024</h1>
+                <h1 class="text-[#FFFFFFCC] font-bold">@all rights reserved, e-Ticketing services limited.2024</h1>
             </div>
             <div class="flex gap-8">
                 <h1 class="text-[#FFFFFFCC] font-bold">Terms & condition</h1>
