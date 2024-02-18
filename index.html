@@ -172,11 +172,11 @@
                 </div>
             </div>
             <!-- Lower -->
-            <div class="bg-white w-4/5 mx-auto my-10 border-none rounded-3xl">
+            <div class="bg-white w-4/5 mx-auto my-10 border-none rounded-3xl flex justify-around">
                 <!-- Seats -->
                 <div class="space-y-6">
                     <div class="space-y-3">
-                        <h1>Select Your Seat</h1>
+                        <h1 class="text-xl font-bold">Select Your Seat</h1>
                         <hr>
                         <div class="flex justify-between">
                             <div>
@@ -185,7 +185,7 @@
                             </div>
                             <div>
                                 <img src="./images/seat-green-filled.png" alt="">
-                                <p class="text-green-600 font-bold">Selected</p>
+                                <p class="text-[#1DD100] font-bold">Selected</p>
                             </div>
                         </div>
                         <hr>
@@ -325,9 +325,60 @@
                         </div>
                     </div>
                 </div>
-                <!-- Calculation -->
+                <!-- Partition -->
                 <div>
-                    
+                    <hr class="text-black">
+                </div>
+                <!-- Calculation -->
+                <div class="border space-y-5">
+                    <h4 class="text-xl font-bold">Select Your Seat</h4>
+                    <hr>
+                    <!-- Selected items container -->
+                    <div class="bg-[#0307121A] border-none rounded-xl p-4 space-y-3">
+                        <!-- Heading -->
+                        <div class="flex justify-between">
+                            <h6>Seat <span>0</span></h6>
+                            <h6>Class</h6>
+                            <h6>Price</h6>
+                        </div>
+                        <hr>
+                        <!-- Empty Div -->
+                        <div>
+
+                        </div>
+                        <hr>
+                        <!-- Total costing div -->
+                        <div class="space-y-3">
+                            <!-- Total price -->
+                            <div class="flex justify-between">
+                                <h1>Total Price</h1>
+                                <h1>BDT <span>0</span></h1>
+                            </div>
+                            <!-- Coupon input -->
+                            <div>
+                                <input class="p-2 border-none rounded-l-xl" placeholder="Have any copupon?" type="text">
+                                <button class="bg-[#1DD100] p-2 text-white border-none rounded-r-xl">Apply</button>
+                            </div>
+                            <!-- Grant total -->
+                            <div class="flex justify-between">
+                                <h1>Grand Total</h1>
+                                <h1>BDT <span>0</span></h1>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <h1>Passenger Name*</h1>
+                        <input class="p-2 border rounded-xl w-full" placeholder="Enter your name" type="text">
+                    </div>
+                    <div>
+                        <h1>Phone Number*</h1>
+                        <input class="p-2 border rounded-xl w-full" placeholder="Enter your phone number" type="number" name="" id="">
+                    </div>
+                    <div>
+                        <h1>Email ID</h1>
+                        <input class="p-2 border rounded-xl w-full" placeholder="Enter your email id" type="email" name="" id="">
+                    </div>
+                    <button class="bg-[#1DD100] border-none rounded-xl p-2 w-full">Next</button>
                 </div>
             </div>
         </section>
