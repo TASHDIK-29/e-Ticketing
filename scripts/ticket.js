@@ -31,7 +31,7 @@ function applyCoupon(){
     const element = document.getElementById('coupon-field');
     const elementText = element.value ;
 
-    const actualElementText = elementText.split(' ').join('').toUpperCase();
+    const actualElementText = elementText.split('').join('');
     
     if(actualElementText === 'NEW15')
     {
@@ -40,7 +40,7 @@ function applyCoupon(){
         document.getElementById('apply-btn').classList.add('hidden');
     }
 
-    else if(actualElementText === 'COUPLE20')
+    else if(actualElementText === 'Couple 20')
     {
         document.getElementById('grand-price').innerText = '1760' ;
         element.classList.add('hidden');
